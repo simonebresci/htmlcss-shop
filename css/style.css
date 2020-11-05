@@ -3,23 +3,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid blue; /* Debug */ */
 }
-
-/* Container di debug - eliminare dal sito consegnato */
-.container-debug{
-  width: 1000px;
-  margin: 0 auto;
-  background-size: contain;
-  border: 1px solid green;
-  background-color: orange;
-}
-
 
 /* Container del sito */
 .container-content{
   width: 1200px;
-  /* border: 1px solid violet; */
+  padding-top:100px;
   margin: 0 auto;
 }
 /* /Container del sito */
@@ -27,16 +16,14 @@
 /* Contenitore di tutti i prodotti */
 .prodotti-box{
   width: 920px;
-  /* border: 1px solid black; */
   margin: 0 auto;
 }
 /* /Contenitore di tutti i prodotti */
 
 /* Riga dei prodotti */
 .prodotti-riga{
-  width: 920px; /* Calcolare correttamente dimensione! */
+  width: 100%; /* Calcolare correttamente dimensione! */
   margin-bottom: 40px;
-  /* border: 2px solid black; */
 }
 /* /Riga dei prodotti */
 
@@ -45,7 +32,6 @@
   position: relative;
   display: inline-block;
   width: 300px;
-  /* border: 1px solid red; */
 }
 /* /Cella con prodotto singolo */
 
@@ -54,7 +40,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  color:black;
+  font-weight: bold;
   background-color: green;
 }
 /* /Sconto in sovraimpressione sulla cella prodotto */
@@ -74,7 +60,7 @@
 /* Cuore in sovraimpressione sulla cella prodotto */
 .over-cuore{
   position: absolute;
-  opacity: 0%;
+  opacity: 0%; /* Mostrare quando ci passa mouse sopra */
   bottom: 0px;
   color:red;
   font-size:20px;
