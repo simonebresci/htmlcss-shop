@@ -1,9 +1,9 @@
-{
+*{
   /* Reset margini, padding */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid blue; /* Debug */
+  /* border: 1px solid blue; /* Debug */ */
 }
 
 
@@ -19,4 +19,39 @@
   background-size: contain;
   border: 1px solid green;
   background-color: orange;
+}
+
+
+
+.prodotti-box{
+  width: 1000px;
+  height: 400px;
+}
+
+.prodotti-riga{
+  width: 920px; /* Calcolare correttamente dimensione! */
+  border: 2px solid black;
+}
+
+.prodotti-cella{
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  /* border: 1px solid red; */
+}
+
+.over-sconto{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color:black;
+  background-color: green;
+}
+
+.over-cuore{
+  position: absolute;
+  bottom: 0px;
+  color:orange;
+  transform: translate(-50%,0%); /* Traslo per centrare orizzontalmente */
+  left:50%;
 }
