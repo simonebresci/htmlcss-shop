@@ -6,47 +6,50 @@
   /* border: 1px solid blue; /* Debug */ */
 }
 
+/* Container di debug - eliminare dal sito consegnato */
 .container-debug{
   width: 1000px;
   margin: 0 auto;
-}
-
-
-.container-content{
-  width: 1200px;
-  /* border: 1px solid violet; */
-  margin: 0 auto;
-}
-
-
-.container-debug{
-  width: 1000px;
   background-size: contain;
   border: 1px solid green;
   background-color: orange;
 }
 
 
+/* Container del sito */
+.container-content{
+  width: 1200px;
+  /* border: 1px solid violet; */
+  margin: 0 auto;
+}
+/* /Container del sito */
 
+/* Contenitore di tutti i prodotti */
 .prodotti-box{
   width: 920px;
   /* border: 1px solid black; */
   margin: 0 auto;
 }
+/* /Contenitore di tutti i prodotti */
 
+/* Riga dei prodotti */
 .prodotti-riga{
   width: 920px; /* Calcolare correttamente dimensione! */
   margin-bottom: 40px;
   /* border: 2px solid black; */
 }
+/* /Riga dei prodotti */
 
+/* Cella con prodotto singolo */
 .prodotti-cella{
   position: relative;
   display: inline-block;
   width: 300px;
   /* border: 1px solid red; */
 }
+/* /Cella con prodotto singolo */
 
+/* Sconto in sovraimpressione sulla cella prodotto */
 .over-sconto{
   position: absolute;
   top: 0px;
@@ -54,16 +57,21 @@
   color:black;
   background-color: green;
 }
+/* /Sconto in sovraimpressione sulla cella prodotto */
 
-/* Colora di rosso i prodotti pari */
+/* Prova selettori avanzati - Colora di rosso i prodotti pari */
 .prodotti-cella:nth-child(2) .over-sconto{
   background-color: red;
 }
+/* /Prova selettori avanzati - Colora di rosso i prodotti pari */
 
+/* Animazione cuoricino sulla cella prodotto */
 .prodotti-cella:hover .over-cuore{
   opacity:100%;
 }
+/* /Animazione cuoricino sulla cella prodotto */
 
+/* Cuore in sovraimpressione sulla cella prodotto */
 .over-cuore{
   position: absolute;
   opacity: 0%;
@@ -75,3 +83,4 @@
   left:50%;
   bottom: 20px;
 }
+/* /Cuore in sovraimpressione sulla cella prodotto */
