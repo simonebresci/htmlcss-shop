@@ -6,11 +6,16 @@
   /* border: 1px solid blue; /* Debug */ */
 }
 
+.container-debug{
+  width: 1000px;
+  margin: 0 auto;
+}
+
 
 .container-content{
   width: 1200px;
-  height: 800px;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
+  margin: 0 auto;
 }
 
 
@@ -24,13 +29,15 @@
 
 
 .prodotti-box{
-  width: 1000px;
-  height: 400px;
+  width: 920px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
 }
 
 .prodotti-riga{
   width: 920px; /* Calcolare correttamente dimensione! */
-  border: 2px solid black;
+  margin-bottom: 40px;
+  /* border: 2px solid black; */
 }
 
 .prodotti-cella{
@@ -48,10 +55,23 @@
   background-color: green;
 }
 
+/* Colora di rosso i prodotti pari */
+.prodotti-cella:nth-child(2) .over-sconto{
+  background-color: red;
+}
+
+.prodotti-cella:hover .over-cuore{
+  opacity:100%;
+}
+
 .over-cuore{
   position: absolute;
+  opacity: 0%;
   bottom: 0px;
-  color:orange;
+  color:red;
+  font-size:20px;
+  font-weight: bold;
   transform: translate(-50%,0%); /* Traslo per centrare orizzontalmente */
   left:50%;
+  bottom: 20px;
 }
