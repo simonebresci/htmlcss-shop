@@ -1,0 +1,21 @@
+{
+  /* Reset margini, padding */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container-content{
+  width: 1200px;
+  height: 800px;
+  border: 1px solid violet;
+}
+
+
+.container-debug{
+  width: 1000px;
+  background-size: contain;
+  border: 1px solid green;
+  background-color: orange;
+}
